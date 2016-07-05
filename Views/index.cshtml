@@ -1,0 +1,10 @@
+<form action="/submit" method="post">
+  <label for "userMax">Let Ping Pong go as far as you wish it to.  But it must stop at some point.  All good things must come to an end.  (We suggest at least 5,000 but probably less than 1,000,000)</labe>
+  <input type="number" min="1" name="userMax" required>
+  <button type="submit">Get sequence</button>
+</form>
+<ul>
+@foreach (var chimichanga in Model) {
+  <li>@chimichanga</li>
+}
+</ul>

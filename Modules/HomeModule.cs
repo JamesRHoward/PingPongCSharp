@@ -9,7 +9,8 @@ namespace PingPong
     public HomeModule()
     {
       Get["/"] = _ => {
-        return View["index.cshtml"];
+        List<string> loadBlank = new List<string> {};
+        return View["index.cshtml", loadBlank];
       };
       Post["/submit"] = _ => {
         PingPongGame userInputGame = new PingPongGame();
